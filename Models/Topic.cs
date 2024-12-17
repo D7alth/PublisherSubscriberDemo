@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MessageBroker.Models;
 
-public abstract class Topic
+public class Topic
 {
     [Key]
     public Guid Id { get; init; }
