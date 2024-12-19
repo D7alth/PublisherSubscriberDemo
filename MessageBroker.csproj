@@ -17,4 +17,22 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Endpoints\Topics\Subscriptions\**" />
+    <Compile Remove="Endpoints\Topics\Messages.cs" />
+    <Compile Remove="Endpoints\Topics\Subscriptions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Endpoints\Topics\Subscriptions\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Endpoints\Topics\Subscriptions\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Endpoints\Topics\Subscriptions\**" />
+  </ItemGroup>
+
 </Project>

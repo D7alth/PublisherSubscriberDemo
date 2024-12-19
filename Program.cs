@@ -1,4 +1,6 @@
 using MessageBroker.Data;
+using MessageBroker.Endpoints.Subscriptions;
+using MessageBroker.Endpoints.Topics;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,5 +19,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.RegisterTopicsEndpoints();
+app.RegisterSubscriptionsEndpoints();
 
 app.Run();

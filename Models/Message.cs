@@ -15,7 +15,7 @@ public class Message
     public DateTime ExpiresAfter { get; init; } = DateTime.Now;
 
     [Required] 
-    public string Status { get; init; } = "New";
+    public string Status { get; set; } = "New";
     
     [ForeignKey(nameof(Subscription.Id))]
     [Required]

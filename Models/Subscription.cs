@@ -11,5 +11,5 @@ public class Subscription
     public string? Name { get; init; }
     
     [Required]
-    public Guid TopicId { get; init; }
+    public Guid TopicId { get; set; }
 }
